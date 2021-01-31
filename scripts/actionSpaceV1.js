@@ -28,7 +28,9 @@ function loadSignUpForm(){
 const form=document.createElement('form');
 
     var entity=new Entity(signUpForm,form)
+    // console.log(entity.entity)
     document.getElementsByTagName('body')[0].appendChild(entity.entity);
+
     const formModel=new Entity(entity,null),
             view=new formView(formModel,{
                 'signup':document.getElementById('signup'),

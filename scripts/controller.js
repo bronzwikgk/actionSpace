@@ -197,6 +197,7 @@ class formController {
     }
 
     login(data) {
+
         console.log(localStorage.getItem(data.username))
         if (localStorage.getItem(data.username)=== data.password){
             this.renderEditor(true);
@@ -235,11 +236,14 @@ class formController {
     }
 
     startSignUpFlow(data) {
-        var flow = new everyFlow({
-            param: data,
-            canBeReStarted: false,
-            autoRestartOnFailure: false
-        })
-        flow.start(this.checkUserNameExist, this.initiateSignUp, this.signUp, this.renderEditor);
+
+            navigateTo('/signup')
+        router()
+        // var flow = new everyFlow({
+        //     param: data,
+        //     canBeReStarted: false,
+        //     autoRestartOnFailure: false
+        // })
+        // flow.start(this.checkUserNameExist, this.initiateSignUp, this.signUp, this.renderEditor);
     }
 }

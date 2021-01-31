@@ -104,7 +104,10 @@ class EntityView extends EventEmitter {
         while (body.firstChild) {
             body.removeChild(body.firstChild)
         }
-        loadLoginForm()
+
+
+        navigateTo('/login')
+        router()
 
     }
     renderSignUp(){

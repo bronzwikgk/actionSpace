@@ -23,14 +23,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36fe03ae-afd7-42dd-a0ab-82f328f6e636" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/helpers/everyFlow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/helpers/router/Editor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/helpers/router/abstractView.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/helpers/router/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/helpers/router/router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/helpers/router/signUp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actionEditor.html" beforeDir="false" afterPath="$PROJECT_DIR$/actionEditor.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/actionSpaceV1.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/actionSpaceV1.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/json/actionEditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/json/actionEditor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/operateV2.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/operateV2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/view.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/view.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +70,11 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Work\actionSpace\scripts\helpers\router" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -85,7 +91,9 @@
       <workItem from="1611392226941" duration="7758000" />
       <workItem from="1611410266885" duration="1689000" />
       <workItem from="1611725617476" duration="5559000" />
-      <workItem from="1611820818854" duration="11830000" />
+      <workItem from="1611820818854" duration="14829000" />
+      <workItem from="1611996668562" duration="2741000" />
+      <workItem from="1612095711298" duration="6062000" />
     </task>
     <servers />
   </component>
@@ -113,10 +121,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610774182312" />
-    <state x="616" y="240" key="run.anything.popup" timestamp="1611052396153">
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1612099909097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1611052396153" />
+    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612099909097" />
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1611860209663">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
