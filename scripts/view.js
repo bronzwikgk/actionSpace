@@ -56,10 +56,10 @@ class EntityView extends EventEmitter {
             this.emit("loadJson", event);
         })
 
-        this.elements.signUp.addEventListener('click',()=>{
+        this.elements.signUp.addEventListener('click', () => {
             this.emit('signup');
         })
-        this.elements.login.addEventListener('click',()=>{
+        this.elements.login.addEventListener('click', () => {
             this.emit('login')
         })
 
@@ -99,7 +99,7 @@ class EntityView extends EventEmitter {
         return this.elements.editor.innerHTML;
     }
 
-    renderLoginForm(){
+    renderLoginForm() {
         const body = document.getElementsByTagName('body')[0];
         while (body.firstChild) {
             body.removeChild(body.firstChild)
@@ -110,12 +110,10 @@ class EntityView extends EventEmitter {
         router()
 
     }
-    renderSignUp(){
-        const body = document.getElementsByTagName('body')[0];
-        while (body.firstChild) {
-            body.removeChild(body.firstChild)
-        }
-        loadSignUpForm()
+
+    renderSignUp() {
+        navigateTo('/signup')
+        router()
 
     }
 
@@ -131,18 +129,18 @@ class formView extends EventEmitter {
         console.log(this.elements)
 
 
-            this.elements.signup?.addEventListener('click',()=> {
-                let username = this.elements.username.value;
-                let password = this.elements.password.value;
-                this.emit('signup',{username,password})
+        this.elements.signup?.addEventListener('click', () => {
+            let username = this.elements.username.value;
+            let password = this.elements.password.value;
+            this.emit('signup', {username, password})
 
-            });
-            this.elements.login?.addEventListener('click',()=>{
-                let username = this.elements.username.value;
-                let password = this.elements.password.value;
-                this.emit('login',{username,password})
+        });
+        this.elements.login?.addEventListener('click', () => {
+            let username = this.elements.username.value;
+            let password = this.elements.password.value;
+            this.emit('login', {username, password})
 
-            })
+        })
     }
 
 }

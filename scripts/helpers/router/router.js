@@ -44,11 +44,17 @@ const router = async () => {
 
     console.warn(view.getHtml())
     let formHTML=view.getHtml()
-    f=formHTML
-    console.error(formHTML)
-    document.getElementsByTagName("body")[0].innerText =  formHTML.toString();
+
+    clearDom()
+    document.getElementsByTagName("body")[0].appendChild(formHTML);
+    view.registerListeners()
 };
 
-var f=""
+const clearDom=()=>{
+    const body = document.getElementsByTagName('body')[0];
+    while (body.firstChild) {
+        body.removeChild(body.firstChild)
+    }
+}
 
 window.addEventListener('popstate',router)

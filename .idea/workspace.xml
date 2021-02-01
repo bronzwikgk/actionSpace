@@ -23,15 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36fe03ae-afd7-42dd-a0ab-82f328f6e636" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/scripts/helpers/router/Editor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/helpers/router/abstractView.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/helpers/router/login.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/helpers/router/router.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/helpers/router/signUp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/actionEditor.html" beforeDir="false" afterPath="$PROJECT_DIR$/actionEditor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/actionSpaceV1.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/actionSpaceV1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/helpers/router/Editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/helpers/router/Editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/helpers/router/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/helpers/router/login.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/helpers/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/helpers/router/router.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/helpers/router/signUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/helpers/router/signUp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/view.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/view.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,7 +90,8 @@
       <workItem from="1611725617476" duration="5559000" />
       <workItem from="1611820818854" duration="14829000" />
       <workItem from="1611996668562" duration="2741000" />
-      <workItem from="1612095711298" duration="6062000" />
+      <workItem from="1612095711298" duration="7013000" />
+      <workItem from="1612163702876" duration="254000" />
     </task>
     <servers />
   </component>
