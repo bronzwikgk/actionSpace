@@ -18,7 +18,9 @@ function loadActionEditor(){
             'document': document,
             'bottom': document.getElementsByTagName('bottombar')[0].children,
             'signUp':document.getElementById('sign'),
-            'login':document.getElementById('log')
+            'login':document.getElementById('log'),
+            'sidebar':document.getElementById('sidenav'),
+            'actionview':document.getElementById('dropdown-menu')
         }),
         controller = new process(view, model);
 }

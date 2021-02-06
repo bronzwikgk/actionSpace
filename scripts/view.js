@@ -63,8 +63,31 @@ class EntityView extends EventEmitter {
             this.emit('login')
         })
 
+        this.elements.sidebar.addEventListener('click', (e) => {
+            let fileName = e.target.innerText;
+            this.emit('openFile', fileName)
+
+        })
+
+        this.elements.actionview.addEventListener('click', (e) => {
+            this.emit('actionview', e)
+        })
+
+
+        this.loadActionView()
     }
 
+    loadActionView(){
+        const files={...localStorage}
+        for (let file in files){
+            let newLink=document.createElement('a')
+            newLink.href="javascript:;";
+            newLink.type='a';
+            newLink.innerText=file
+            this.elements.sidebar.appendChild(newLink)
+            console.log(file)
+        }
+    }
     updateDomContent(cmd) {
         if (cmd === "createLink") {
             let url = prompt("Enter Url");
@@ -117,6 +140,17 @@ class EntityView extends EventEmitter {
 
     }
 
+    updateSideBar(filename) {
+        let link = document.createElement('a');
+        link.href = "#"
+        link.innerText = filename
+        this.elements.sidebar.appendChild(link)
+    }
+
+    newFile(){
+        clearDom()
+        loadActionEditor()
+    }
 }
 
 

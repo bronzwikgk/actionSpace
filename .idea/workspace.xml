@@ -24,12 +24,13 @@
   <component name="ChangeListManager">
     <list default="true" id="36fe03ae-afd7-42dd-a0ab-82f328f6e636" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/actionEditor.html" beforeDir="false" afterPath="$PROJECT_DIR$/actionEditor.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/helpers/router/Editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/helpers/router/Editor.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/helpers/router/login.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/helpers/router/login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/helpers/router/router.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/helpers/router/router.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/helpers/router/signUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/helpers/router/signUp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/actionSpaceV1.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/actionSpaceV1.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/entityModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/entityModel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/helpers/storage.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/helpers/storage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/json/actionEditor.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/json/actionEditor.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/view.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/view.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style/action.css" beforeDir="false" afterPath="$PROJECT_DIR$/style/action.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +46,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -92,6 +101,11 @@
       <workItem from="1611996668562" duration="2741000" />
       <workItem from="1612095711298" duration="7013000" />
       <workItem from="1612163702876" duration="254000" />
+      <workItem from="1612174868949" duration="520000" />
+      <workItem from="1612431575061" duration="1603000" />
+      <workItem from="1612445920277" duration="517000" />
+      <workItem from="1612517691110" duration="4582000" />
+      <workItem from="1612539085550" duration="597000" />
     </task>
     <servers />
   </component>
@@ -109,23 +123,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="564" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1610772670566">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="564" y="130" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1610772670566" />
-    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1610774182312">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="777" y="433" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1040@0.0.1920.1040" timestamp="1610774182312" />
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup" timestamp="1612099909097">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" width="672" height="677" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1612099909097" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1611860209663">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1611860209663" />
   </component>
 </project>

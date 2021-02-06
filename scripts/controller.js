@@ -3,6 +3,7 @@ class entityController {
     constructor(ehhView, model) {
         this._model = model;
         this.ehhView = ehhView;
+        this.openedItem=""
         ehhView.on("createLink", cmd => this.createLink(cmd));
         ehhView.on("showCode", () => this.showCode());
         ehhView.on("other", command => this.otherActions(command));
@@ -27,6 +28,37 @@ class entityController {
         ehhView.on('login', () => {
             this.startLogin()
         })
+        ehhView.on('openFile', (filename) => {
+            this.loadFile(filename);
+        })
+        ehhView.on('actionview', (event) => {
+            this.handleActionView(event.target)
+        })
+
+    }
+
+    handleActionView(target) {
+
+        let action = target.id;
+
+        if (action === "newfile") {
+            this.ehhView.newFile()
+
+        } else if (action === "openfile") {
+
+
+
+        } else if (action === "savefile") {
+            console.log(this.openedItem)
+            storageHelper.saveToStorage("local",this.openedItem)
+
+        } else if (action === "export") {
+
+            storageHelper.saveToStorage("hardDrive")
+        } else if (action === "import") {
+            //TODO
+        }
+
     }
 
     createLink(cmd) {
@@ -57,8 +89,8 @@ class entityController {
     }
 
     save() {
-        let storage = new storageHelper
-        storage.saveToStorage()
+
+        storageHelper.saveToStorage()
     }
 
     reload() {
@@ -71,10 +103,17 @@ class entityController {
         loadActionEditor()
     }
 
+    loadFile(filename) {
+        actionEditor.actionEditorBlock[0].divBlock=JSON.parse(localStorage.getItem(filename));
+        this.openedItem=filename
+        console.error(this.openedItem)
+        this.ehhView.newFile()
+    }
 
     openFile(event) {
         let storage = new storageHelper
-        storage.openFile(event)
+        let fileName = storage.openFile(event)
+        this.ehhView.updateSideBar(fileName)
     }
 
     startSignUp() {
@@ -187,7 +226,7 @@ class formController {
 
     signUp(data) {
         console.warn(data)
-        if (data!=null ||data!==false) {
+        if (data != null || data !== false) {
             localStorage.setItem(data.username, data.password);
             return true
         } else {
@@ -199,11 +238,10 @@ class formController {
     login(data) {
 
         console.log(localStorage.getItem(data.username))
-        if (localStorage.getItem(data.username)=== data.password){
+        if (localStorage.getItem(data.username) === data.password) {
             this.renderEditor(true);
-        }
-    else{
-        alert("wrong id or password")
+        } else {
+            alert("wrong id or password")
         }
     }
 
@@ -216,7 +254,7 @@ class formController {
 
     initiateSignUp(exist) {
         console.log(exist)
-        if (exist.exist===false) {
+        if (exist.exist === false) {
             return exist.data
         } else {
             return null
@@ -237,7 +275,7 @@ class formController {
 
     startSignUpFlow(data) {
 
-            navigateTo('/signup')
+        navigateTo('/signup')
         router()
         // var flow = new everyFlow({
         //     param: data,

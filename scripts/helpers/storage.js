@@ -69,7 +69,7 @@ const AutoSave = (function () {
 
 class storageHelper {
 
-    clearStorage() {
+    static clearStorage() {
         if (confirm("Are you sure you want to create a new text? This will erase all the content.")) {
             window.localStorage.clear();
             let content = document.getElementsByTagName("divblock")[0];
@@ -82,7 +82,7 @@ class storageHelper {
         }
     }
 
-    saveToStorage() {
+    static saveToStorage(location,openedItem) {
         let divArray = document.getElementsByTagName('divblock')[0].children;
 
         let divObjectArray = [];
@@ -100,12 +100,32 @@ class storageHelper {
         console.log(divObjectArray);
         actionEditor.actionEditorBlock[0].divBlock = divObjectArray;
         // localStorage.dom = JSON.stringify(actionEditor);
-        this.saveToLocal();
+        if (location === "local")
+            this.saveToLocalStorage(openedItem);
+        else
+            this.saveToLocal()
 
 
     }
 
-    saveToLocal() {
+    static saveToLocalStorage(openedItem) {
+
+        const items = {...localStorage};
+        let length = 0;
+        for (let itemsKey in items) {
+            console.log(itemsKey)
+            length++;
+        }
+
+        let data = JSON.stringify(actionEditor.actionEditorBlock[0].divBlock)
+
+        localStorage.setItem(openedItem||`file${length + 1}`, data);
+
+
+    }
+
+    static saveToLocal() {
+
         const a = document.createElement("a");
         a.href = URL.createObjectURL(new Blob([JSON.stringify(actionEditor, null, 2)], {
             type: "application/json"
@@ -117,15 +137,19 @@ class storageHelper {
         console.log(actionEditor);
     }
 
-    openFile = function (event) {
+    static openFile(event) {
         var input = event.target;
-        console.log("her");
+
+        console.log(event.srcElement.files[0])
         var reader = new FileReader();
+
         reader.onload = function () {
             var text = reader.result;
-            actionEditor = JSON.parse(text);
+            actionEditor.actionEditorBlock = JSON.parse(text).actionEditorBlock;
             console.log(reader.result.substring(0, 200));
         };
         reader.readAsText(input.files[0]);
-    };
+
+        return event.srcElement.files[0].name;
+    }
 }

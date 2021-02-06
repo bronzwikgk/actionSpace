@@ -100,6 +100,6 @@
     }
 
     delete() {
-      clearStorage();
+      storageHelper.clearStorage();
     }
 }
